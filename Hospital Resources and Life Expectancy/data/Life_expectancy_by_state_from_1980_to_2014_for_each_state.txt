@@ -1,0 +1,1 @@
+We get this Life_expectancy_by_state_from_1980_to_2014_for_each_state data from http://ghdx.healthdata.org/record/ihme-data/united-states-life-expectancy-and-age-specific-mortality-risk-county-1980-2014

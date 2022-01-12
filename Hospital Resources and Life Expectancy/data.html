@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+
+    <style>
+        .total {
+            padding-top: 40px;
+        }
+        li,ul {
+            display: inline;
+            list-style:none;
+        }
+        header {
+            margin: -10px;
+            position: fixed;
+            width: 100%;
+            background-color: lightgrey;
+            font-size: 20px;
+            padding: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <li>
+        <a href = "index.html"><ul>Home</ul></a>
+        <a href = "data.html"><ul>Data</ul></a>
+        <a href = "acks.html"><ul>Acknowledgements</ul></a>
+        <a href = "results.html"><ul>Results</ul></a>
+    </li>
+</header>
+<div class="total">
+<h3>1. Hospital_General_Information.csv</h3>
+<p>Columns: Facility ID,Facility Name,Address,City,State,ZIP Code,County Name,Phone Number,Hospital Type,
+    Hospital Ownership,Emergency Services,Meets criteria for meaningful use of EHRs,Hospital overall rating,
+    Hospital overall rating footnote,Mortality national comparison,Mortality national comparison footnote,
+    Safety of care national comparison,Safety of care national comparison footnote,Readmission national comparison,
+    Readmission national comparison footnote,Patient experience national comparison,
+    Patient experience national comparison footnote,Effectiveness of care national comparison,
+    Effectiveness of care national comparison footnote,Timeliness of care national comparison,
+    Timeliness of care national comparison footnote,Efficient use of medical imaging national comparison,
+    Efficient use of medical imaging national comparison footnote,Location</p>
+
+<p>The column we used is <strong>State</strong>. We need to know each hospital belongs to which state,
+so we can know each state has how many hospitals.</p>
+<br>
+
+<h3>2. Life_expectancy_by_state.csv</h3>
+<p>Columns: Rank,State/Federal District,Life Expectancy 2018,Life Expectancy 2010,Change 2010-2018,
+    Male Life Expectancy,Female Life Expectancy</p>
+<p>The columns we used are <strong>State/Federal District</strong>, <strong>Life Expectancy 2018</strong>.
+    We need the data of the life expectancy for each state.</p>
+<br>
+
+<h3>3. population.csv</h3>
+<p>Columns: SUMLEV,REGION,DIVISION,STATE,NAME,CENSUS2010POP,ESTIMATESBASE2010,POPESTIMATE2010,POPESTIMATE2011,POPESTIMATE2012,
+    POPESTIMATE2013,POPESTIMATE2014,POPESTIMATE2015,POPESTIMATE2016,POPESTIMATE2017,POPESTIMATE2018,POPESTIMATE2019,
+    NPOPCHG_2010,NPOPCHG_2011,NPOPCHG_2012,NPOPCHG_2013,NPOPCHG_2014,NPOPCHG_2015,NPOPCHG_2016,NPOPCHG_2017,
+    NPOPCHG_2018,NPOPCHG_2019,BIRTHS2010,BIRTHS2011,BIRTHS2012,BIRTHS2013,BIRTHS2014,BIRTHS2015,BIRTHS2016,
+    BIRTHS2017,BIRTHS2018,BIRTHS2019,DEATHS2010,DEATHS2011,DEATHS2012,DEATHS2013,DEATHS2014,DEATHS2015,DEATHS2016,
+    DEATHS2017,DEATHS2018,DEATHS2019,NATURALINC2010,NATURALINC2011,NATURALINC2012,NATURALINC2013,NATURALINC2014,
+    NATURALINC2015,NATURALINC2016,NATURALINC2017,NATURALINC2018,NATURALINC2019,INTERNATIONALMIG2010,INTERNATIONALMIG2011,
+    INTERNATIONALMIG2012,INTERNATIONALMIG2013,INTERNATIONALMIG2014,INTERNATIONALMIG2015,INTERNATIONALMIG2016,
+    INTERNATIONALMIG2017,INTERNATIONALMIG2018,INTERNATIONALMIG2019,DOMESTICMIG2010,DOMESTICMIG2011,DOMESTICMIG2012,
+    DOMESTICMIG2013,DOMESTICMIG2014,DOMESTICMIG2015,DOMESTICMIG2016,DOMESTICMIG2017,DOMESTICMIG2018,DOMESTICMIG2019,
+    NETMIG2010,NETMIG2011,NETMIG2012,NETMIG2013,NETMIG2014,NETMIG2015,NETMIG2016,NETMIG2017,NETMIG2018,NETMIG2019,
+    RESIDUAL2010,RESIDUAL2011,RESIDUAL2012,RESIDUAL2013,RESIDUAL2014,RESIDUAL2015,RESIDUAL2016,RESIDUAL2017,
+    RESIDUAL2018,RESIDUAL2019,RBIRTH2011,RBIRTH2012,RBIRTH2013,RBIRTH2014,RBIRTH2015,RBIRTH2016,RBIRTH2017,
+    RBIRTH2018,RBIRTH2019,RDEATH2011,RDEATH2012,RDEATH2013,RDEATH2014,RDEATH2015,RDEATH2016,RDEATH2017,RDEATH2018,
+    RDEATH2019,RNATURALINC2011,RNATURALINC2012,RNATURALINC2013,RNATURALINC2014,RNATURALINC2015,RNATURALINC2016,
+    RNATURALINC2017,RNATURALINC2018,RNATURALINC2019,RINTERNATIONALMIG2011,RINTERNATIONALMIG2012,RINTERNATIONALMIG2013,
+    RINTERNATIONALMIG2014,RINTERNATIONALMIG2015,RINTERNATIONALMIG2016,RINTERNATIONALMIG2017,RINTERNATIONALMIG2018,
+    RINTERNATIONALMIG2019,RDOMESTICMIG2011,RDOMESTICMIG2012,RDOMESTICMIG2013,RDOMESTICMIG2014,RDOMESTICMIG2015,
+    RDOMESTICMIG2016,RDOMESTICMIG2017,RDOMESTICMIG2018,RDOMESTICMIG2019,RNETMIG2011,RNETMIG2012,RNETMIG2013,
+    RNETMIG2014,RNETMIG2015,RNETMIG2016,RNETMIG2017,RNETMIG2018,RNETMIG2019</p>
+
+<p>The column we used are <strong>STATE</strong>, <strong>POPESTIMATE2018</strong>.
+    We need the data of the population for each state.</p>
+<br>
+
+<h3>4. Life_expectancy_by_state_from_1980_to_2014_for_each_state(include 52 files, same columns)</h3>
+<p>Columns: measure_id,measure_name,location_id,location_name,FIPS,sex_id,sex,age_id,age_name,year_id,metric,val,upper,lower</p>
+<p>The column we used are <strong>location_name</strong>, <strong>sex_id</strong>, <strong>val</strong>.
+We need the data of the life expectancy for each state from 1980 to 2014, so we can find the change rate of life expectancy for each state.</p>
+
+</div>
+</body>
+</html>
